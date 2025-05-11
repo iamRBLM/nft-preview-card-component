@@ -33,6 +33,10 @@ Users should be able to:
 
 ![Mobile Preview](images/mobile-preview.png)
 
+#### Active Preview
+
+![Active Preview](images/active-preview.png)
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
