@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --light-blue: hsl(215, 32%, 27%);
+  --dark-blue: hsl(217, 54%, 11%);
+  --strong-blue: hsl(216, 50%, 16%);
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --black-alpha: hsla(0, 0%, 0%, 0.095);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ---------------------------------- */
+/* Card */
+/* ---------------------------------- */
+.card {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 25px 50px var(--black-alpha);
+}
+
+.card h1:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.card .card-img img {
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+}
+
+.card .card-img {
+  position: relative;
+}
+
+.card .card-img::after,
+.card .card-img::before {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  width: 302px;
+  height: 302px;
+}
+
+.card .card-img::after {
+  border-radius: 8px;
+  opacity: 0.5;
+  background-color: var(--cyan);
+}
+
+.card .card-img::before {
+  background-image: url("/images/icon-view.svg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.card .card-img:hover::before,
+.card .card-img:hover::after {
+  display: block;
+}
+
+.card .divider-solid {
+  width: 302px;
+  height: 1px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------- */
+/* Card Status */
+/* ---------------------------------- */
+.card .card-status {
+  justify-content: space-between;
+  height: auto;
+}
+
+.card .card-status .card-status-content {
+  justify-content: space-between;
+  height: auto;
+}
+
+/* ---------------------------------- */
+/* Card Author */
+/* ---------------------------------- */
+.card .card-author {
+  justify-content: start;
+  height: auto;
+}
+
+.card .card-author .author-name:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.card .card-author .icon-clock {
+  width: 16px;
+  height: 16px;
+}
+
+.card .card-author .icon-eth {
+  width: 11px;
+  height: 18px;
+}
+
+.card .card-author .icon-view {
+  width: 33px;
+  height: 30px;
+}
+
+.card .card-author .profile-img {
+  width: 33px;
+  height: 33px;
+  outline: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+/* ---------------------------------- */
+/* Font Size and Text Style */
+/* ---------------------------------- */
+.text-lg {
+  font-size: 1.22rem;
+  font-weight: 600;
+}
+
+.text-normal {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.text-sm {
+  font-size: 0.88rem;
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ---------------------------------- */
+/* Padding */
+/* ---------------------------------- */
+.pt-md {
+  padding-top: 24px;
+}
+
+.pb-lg {
+  padding-bottom: 32px;
+}
+
+.pb-md {
+  padding-bottom: 24px;
+}
+
+.px-md {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* ---------------------------------- */
+/* Margin */
+/* ---------------------------------- */
+.mt-md {
+  margin-top: 24px;
+}
+
+.mt-sm {
+  margin-top: 16px;
+}
+
+.mb-md {
+  margin-bottom: 24px;
+}
+
+.mb-sm {
+  margin-bottom: 16px;
+}
+
+.mr-xsm {
+  margin-right: 5px;
+}
+
+.ml-sm {
+  margin-left: 16px;
+}
+
+.ml-xsm {
+  margin-left: 7.7px;
+}
+
+/* ---------------------------------- */
+/* Text Color */
+/* ---------------------------------- */
+.text-white {
+  color: var(--white);
+}
+
+.text-soft-blue {
+  color: var(--soft-blue);
+}
+
+.text-cyan {
+  color: var(--cyan);
+}
+
+/* Background Color */
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.bg-strong-blue {
+  background-color: var(--strong-blue);
+}
+
+.bg-cyan {
+  background-color: var(--cyan);
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
